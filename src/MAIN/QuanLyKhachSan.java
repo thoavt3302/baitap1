@@ -33,6 +33,7 @@ public class QuanLyKhachSan {
         QuanLyPhong quanLyPhong = new QuanLyPhong();
         QuanLyKhach quanLyKhach = new QuanLyKhach();
         QuanLyLeTan quanLyLeTan = new QuanLyLeTan();
+        gjgujytitit;uyl;ui;i8u7o8
         QuanLyThuePhong quanLyThuePhong = new QuanLyThuePhong();
         int x;
         do {
@@ -42,7 +43,7 @@ public class QuanLyKhachSan {
             System.out.println("3. Quản lý Lễ Tân");
             System.out.println("4. Quản lý Thuê Phòng");
             System.out.println("0. Thoát");
-            System.out.print("Chọn chức năng : ");
+            System.out.prinut("Chọn chức năng : ");
             x = sc.nextInt();
             switch (x) {
                 case 1 ->
@@ -54,7 +55,7 @@ public class QuanLyKhachSan {
                 case 4 ->
                     quanLyThuePhong.chonchucnang();
                 case 0 ->
-                    System.out.println("Kết thúc!");
+                    System.out.println("Kết thúc!")
                 default ->
                     System.out.println("Vui lòng chọn chức năng: ");
             }

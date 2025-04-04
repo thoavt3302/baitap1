@@ -1,5 +1,118 @@
 public class ErrorFest {
+public class ErrorFest {
 
+    public static void main(String[] args) {
+        ErrorFest ef = new ErrorFest();
+        ef.run();
+    }
+
+    public void run() {
+        int total = 0;
+        for (int i = 0; i < 1000; i++) { // Tăng số vòng lặp lên để tạo trên 1000 lỗi
+            total += causeErrors(i);
+        }
+        System.out.println("Done: " + total);
+    }
+
+    public int causeErrors(int index) {
+        int count
+
+            public class ErrorFest {
+
+    public static void main(String[] args) {
+        ErrorFest ef = new ErrorFest();
+        ef.run();
+    }
+
+    public void run() {
+        int total = 0;
+        for (int i = 0; i < 200; i++) { // Lặp để nhân lỗi lên
+            total += causeErrors(i);
+        }
+        System.out.println("Done: " + total);
+    }
+
+    public int causeErrors(int index) {
+        int count = 0;
+
+        // Lỗi NullPointer
+        String str = null;
+        try {
+            str.length(); // lỗi runtime
+        } catch (Exception e) { count++; }
+
+        // Lỗi chia cho 0
+        try {
+            int x = 10 / 0;
+        } catch (Exception e) { count++; }
+
+        // Lỗi truy cập mảng vượt chỉ số
+        int[] arr = new int[5];
+        try {
+            int val = arr[10];
+        } catch (Exception e) { count++; }
+
+        // Lỗi ép kiểu sai
+        try {
+            Object o = new Integer(5);
+            String s = (String) o;
+        } catch (Exception e) { count++; }
+
+        // Lỗi logic: so sánh sai
+        int a = 5, b = 10;
+        if (a > b) {
+            count++; // logic sai
+        }
+
+        // Lỗi logic: điều kiện luôn đúng
+        public class ErrorFest {
+
+    public static void main(String[] args) {
+        ErrorFest ef = new ErrorFest();
+        ef.run();
+    }
+
+    public void run() {
+        int total = 0;
+        for (int i = 0; i < 200; i++) { // Lặp để nhân lỗi lên
+            total += causeErrors(i);
+        }
+        System.out.println("Done: " + total);
+    }
+
+    public int causeErrors(int index) {
+        int count = 0;
+
+        // Lỗi NullPointer
+        String str = null;
+        try {
+            str.length(); // lỗi runtime
+        } catch (Exception e) { count++; }
+
+        // Lỗi chia cho 0
+        try {
+            int x = 10 / 0;
+        } catch (Exception e) { count++; }
+
+        // Lỗi truy cập mảng vượt chỉ số
+        int[] arr = new int[5];
+        try {
+            int val = arr[10];
+        } catch (Exception e) { count++; }
+
+        // Lỗi ép kiểu sai
+        try {
+            Object o = new Integer(5);
+            String s = (String) o;
+        } catch (Exception e) { count++; }
+
+        // Lỗi logic: so sánh sai
+        int a = 5, b = 10;
+        if (a > b) {
+            count++; // logic sai
+        }
+
+        // Lỗi logic: điều kiện luôn đúng
     public static void main(String[] args) {
         System.out.println("Hello, world!") // Thiếu dấu chấm phẩy
 

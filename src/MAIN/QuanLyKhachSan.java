@@ -1,3 +1,72 @@
+public class ErrorFest {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, world!") // Thiếu dấu chấm phẩy
+
+        int x = 10;
+        int y = 0;
+        System.out.println(x / y); // Lỗi chia cho 0
+
+        int[] arr = new int[3];
+        System.out.println(arr[5]); // Lỗi chỉ mục ngoài phạm vi
+
+        String s = null;
+        System.out.println(s.length()); // NullPointerException
+
+        if (x = 10) { // Dùng '=' thay vì '=='
+            System.out.println("x is 10");
+        }
+
+        for (int i = 0; i < 10; i++)
+            System.out.println(i); // Thiếu dấu ngoặc nhọn cho vòng lặp
+
+        Object obj = new Integer(100);
+        System.out.println((String) obj); // Lỗi ép kiểu
+
+        ErrorFest.printNothing(); // Gọi phương thức chưa định nghĩa
+
+        String name = "John";
+        char ch = name.charAt(10); // Lỗi chỉ mục chuỗi ngoài phạm vi
+
+        int z = "abc"; // Lỗi gán sai kiểu dữ liệu
+
+        int sum = add(5); // Gọi hàm sai số lượng tham số
+    }
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    private void infiniteLoop() {
+        while (true) {
+            // Lỗi vòng lặp vô tận
+        }
+    }
+
+    public void faultyMethod() {
+        int i = 0;
+        if (i < 10) {
+            int j = i + 10;
+        }
+        System.out.println(j); // Lỗi phạm vi biến
+    }
+
+    public void unreachableCode() {
+        return;
+        System.out.println("This won't compile"); // Lỗi mã không thể đạt tới
+    }
+
+    public void unsafeCast() {
+        Object data = new Object();
+        String str = (String) data; // Lỗi ép kiểu không an toàn
+    }
+
+    public void divideZeroConstant() {
+        int zero = 0;
+        int res = 5 / zero; // Chia cho 0
+    }
+}
+
 def main()
 print('Hello, World!') # Lỗi thụt dòng
 

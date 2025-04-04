@@ -1,8 +1,54 @@
-// ĐẶNG MẠNH TUAN -71DCHT22-71DCHT22135
-//  NGUYEN TRUNG VAN - 71DCHT22 - 71DCHT22140
-// VU THI THOA - 71DCHT22 - 71DCHT22120
-//
-//
+def main()
+print('Hello, World!') # Lỗi thụt dòng
+
+    x = 10
+    y = 0
+    print(x / y) # Lỗi chia cho 0
+
+    for i in range(10)
+        print(i) # Lỗi thiếu dấu ':'
+
+    if x = 10:
+        print('x là 10') # Lỗi dùng '=' thay vì '=='
+
+    my_list = [1, 2, 3]
+    print(my_list[5]) # Lỗi truy cập phần tử ngoài phạm vi
+
+    open('file_khong_ton_tai.txt').read() # Lỗi mở file không tồn tại
+
+    import json
+    data = {'name': 'John', 'age': 30}
+    print(json.loads(data)) # Lỗi parse JSON sai kiểu dữ liệu
+
+    def foo(a, b):
+        return a + c # Lỗi biến chưa định nghĩa
+
+    print(foo(5, 10))
+
+    class Person:
+    def __init__(self, name):
+        self.name = name # Lỗi thụt dòng trong class
+
+    print(10 + '20') # Lỗi cộng số với chuỗi
+
+    import os
+    os.remove('file_khong_ton_tai.txt') # Lỗi xóa file không tồn tại
+
+    for i in range(5):
+    print(i) # Lỗi thụt dòng sai
+
+    def rec(n):
+        return rec(n-1) # Lỗi đệ quy không có điều kiện dừng
+
+    print(rec(5))
+
+    def infinite_loop():
+        while True:
+            pass # Lỗi vòng lặp vô tận
+
+    infinite_loop()
+
+    print(undefined_variable) # Lỗi biến chưa khai báo
 
 /*
  * To change this license header, choose License Headers in Project Properties.

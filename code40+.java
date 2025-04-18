@@ -37,3 +37,42 @@ public class CriticalVulnerableApp {
         System.out.println("Encoded: " + base64Encoded);
     }
 }
+
+import java.sql.*;
+
+public class SQLInjectionVulnerableApp {
+
+    public void vulnerableSQLQuery1(String userInput) throws SQLException {
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "user", "pass");
+        Statement stmt = conn.createStatement();
+        String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+        ResultSet rs = stmt.executeQuery(query);
+    }
+
+    public void vulnerableSQLQuery2(String userInput) throws SQLException {
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "user", "pass");
+        Statement stmt = conn.createStatement();
+        String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+        ResultSet rs = stmt.executeQuery(query);
+    }
+
+    public void vulnerableSQLQuery3(String userInput) throws SQLException {
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "user", "pass");
+        Statement stmt = conn.createStatement();
+        String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+        ResultSet rs = stmt.executeQuery(query);
+    }
+
+    // ...
+
+    // Các hàm tiếp theo cũng giống tương tự như trên
+    // Copy mẫu 1 hàm và lặp lại đến vulnerableSQLQuery100
+
+    public void vulnerableSQLQuery100(String userInput) throws SQLException {
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "user", "pass");
+        Statement stmt = conn.createStatement();
+        String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+        ResultSet rs = stmt.executeQuery(query);
+    }
+}
+
